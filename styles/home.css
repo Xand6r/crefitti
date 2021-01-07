@@ -494,7 +494,22 @@ screensize is less than 512px */
 .card_item__image_content{
     width: 428.74px;
     height: 530px;
+    cursor: pointer;
+    transition: 300ms;
 }
+
+.card_item__image_content:hover{
+    margin-top: -5px;
+}
+
+.card_item__image_content.--speakspire:hover{
+    box-shadow: 12px 12px 0px #43E56E;
+}
+
+.card_item__image_content.--dettydecember:hover{
+    box-shadow: 12px 12px 0px #FF7901;
+}
+
 .card_item__sub_text{
     margin-top: 40px;
 }
