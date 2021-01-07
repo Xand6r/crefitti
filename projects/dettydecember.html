@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creffiti</title>
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/animate_home.css">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../styles/newprojects.css">
     <script src="https://kit.fontawesome.com/58877336b3.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
-    
+
     <!-- the top navigation -->
     <div class="nav_wrapper">
         <nav class="navigation">
-            <div class="navigation__logo__icon" onclick="goTo('home.html')">
+            <div class="navigation__logo__icon"  onclick="goTo('home.html')">
                 
                 <svg class="icon" width="101" height="40" viewBox="0 0 101 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path class="rectanglepart" d="M96.9695 11.0928H91.165V15.6025H96.9695V11.0928Z" fill="#01A572"/>
@@ -38,371 +37,296 @@
                 </svg>
 
             </div>
-            <div class="navigation__meta --smallhide">
-                <div class="navigation__meta__item --half-boxed --nav__sub" onclick="goTo('theclan.html')">
+            <div class="navigation__meta --smallhide --nav__sub">
+                <div class="navigation__meta__item --half-boxed" onclick="goTo('theclan.html')">
                     the clan
                 </div>
-                <div class="navigation__meta__item --half-boxed --nav__sub" onclick="goTo('work.html')">
+                <div class="navigation__meta__item --half-boxed" onclick="goTo('work.html')">
                     work
                 </div>
-                <div class="navigation__meta__item --half-boxed --nav__sub" onclick="goTo('https:\/\/medium.com/@creffiti',true)" >
+                <div class="navigation__meta__item --half-boxed" onclick="goTo('https:\/\/medium.com/@creffiti',true)">
                     scribbles
                 </div>
-                <div class="navigation__meta__item --boxed --nav__sub" onclick="goTo('sayhi.html')">
+                <div class="navigation__meta__item --boxed" onclick="goTo('sayhi.html')">
                     say hi
                 </div>
             </div>
             <div 
-            class="navigation__meta__item --smallshow -hamburger  --nav__sub"
-        >
+                class="navigation__meta__item --smallshow -hamburger  --nav__sub"
+            >
+                <!-- <i class="fas fa-bars --greentext">
 
-        <div class="dropdown">
-            <i class="fas fa-bars --greentext dropbtn"></i>
-            <div class="dropdown-content">
-                <a onclick="goTo('theclan.html')"  class="mobile_nav">
-                  the clan
-                </a>
-                <a onclick="goTo('work.html')" class="mobile_nav">
-                    work
-                </a>
-                <a onclick="goTo('https:\/\/medium.com/@creffiti',true)"  class="mobile_nav">
-                    scribbles
-                </a>
-                <a onclick="goTo('sayhi.html')" class="mobile_nav">
-                    say hi
-                </a>
+                </i> -->
+                <div class="dropdown">
+                    <!-- <button class="dropbtn">Dropdown</button> -->
+                    <i class="fas fa-bars --greentext dropbtn"></i>
+                    <div class="dropdown-content">
+                        <a onclick="goTo('theclan.html')"  class="mobile_nav">
+                          the clan
+                        </a>
+                        <a onclick="goTo('work.html')" class="mobile_nav">
+                            work
+                        </a>
+                        <a onclick="goTo('https:\/\/medium.com/@creffiti',true)"  class="mobile_nav">
+                            scribbles
+                        </a>
+                        <a onclick="goTo('sayhi.html')" class="mobile_nav">
+                            say hi
+                        </a>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </div>
+
 
         </nav>
     </div>
     <!-- the top navigation -->
     
-    <!-- first section -->
+    <!-- first section header -->
     <div class="section -first">
-        <div class="background --slideleft_animation"></div>
-
-        <div class="-text-group">
-            <div class="section__text__top"></div>
-            <span class="section__text -primary --misfits">
-                <div>
-                    <span class="--fadein_animation --delay__one">
-                        we are the 
-                    </span>
-                    <br>
-                    <span class="--greentext --fadein_animation --delay__two">
-                        creative misfits.
-                    </span>
-                </div>
-            </span>
-            <div class="section__text__bottom"></div>
-
-            <div 
-                class="section__text__icon --slidedown_animation"
-            >
-                <img 
-                    class="--fadein_animation_new"
-                    src="./images/assets/homeelement.svg" 
-                    alt="arrow-down"
-                >
+        <div class="first-section-wrapper">
+            <div class="biggercontent">
+                it turned out <br>
+                PEP-SEE and vibey<br>
+                - a complete mood!
             </div>
-        </div>
+            <div class="subcontent">
+                <div class="subcontent__left">detty december</div>
 
-        <div class="together__item">
-            <div 
-                class="section__text -secondary" 
-                data-aos="fade-down"
-                data-aos-offset="300"
-                data-aos-duration="1200"
-                style="margin-bottom: 0;"
-            >
-                <div>
-                    we give brands
-                    <br>
-                    <span class="--greentext">purpose & meaning</span>
+                <div class="subcontent__middle">
+
+                    <svg width="154" height="1" viewBox="0 0 154 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="154" height="1" fill="black"/>
+                    </svg>
+                        
                 </div>
                 
-            </div>
-
-            <div 
-                class="section__text__subtext" 
-                data-aos="slide-up"
-                data-aos-offset="400"
-                data-aos-duration="1200"
-                style="max-width: 542px;letter-spacing: 0.03em;color:#030303"
-            >
-            creatively, we make it happen with an unusual mix of <b>branding + business</b> strategy.
+                <div class="subcontent__right"> 
+                    brand strategy<br>visual identity
+                </div>
             </div>
         </div>
-
     </div>
-    <!-- first section -->
+    <!-- first section header -->
 
     <!-- second section -->
-    <div class="section -second" >
+    <div class="section -second">
+        <div class="second-section-wrapper">
 
-        <!-- section for the floating cards -->
-        <div class="card_items">
-            <!-- a group of two cards -->
-            <div class="group">
-                <!-- a floating card -->
-                <div class="card_item"  
-                    data-aos="pic_slide_up"
-                    data-aos-offset="500"
-                    data-aos-duration="1200"
-                >
-                    <img 
-                        class="card_item__image_content --speakspire"
-                        src="./images/projects/speakspire/cover.png" 
-                        alt="image"
-                    >
-                    <div 
-                        class="card_item__sub_text"
-                        data-aos="fade-down"
-                        data-aos-duration="1000"
-                        data-aos-offset="200"
-                    >
-                        <div class="-header">
-                            lookgoodinit
-                        </div>
-                        <div class="-sub-header">
-                            brand identity & strategy
-                        </div>
-                    </div>
-                </div>
-                <!-- a floating card -->
+            <div class="problem_statement">
 
-                <!-- a floating card -->
                 <div 
-                    class="card_item" 
-                    data-aos="pic_slide_down"
-                    data-aos-offset="500"
-                    data-aos-duration="1200"
+                    class="problem_statement__left"
+                    data-aos="fade-up-right"
+                    data-aos-offset="200"
+                    data-aos-duration="1100"
                 >
-                    <img 
-                        class="card_item__image_content --dettydecember"
-                        src="./images/projects/detty/cover.png" 
-                        onclick="goTo('/projects/dettydecember.html')"
-                        alt=""
-                    >
-                    <div 
-                        class="card_item__sub_text"
-                        data-aos="fade-down"
-                        data-aos-duration="1000"
-                        data-aos-offset="200"
-                    >
-                        <div class="-header">
-                            lookgoodinit
-                        </div>
-                        <div class="-sub-header">
-                            brand identity & strategy
+                    <div class="left_heading">
+                        <div class="left_heading__text">
+                            <span class="left_heading__text__text" >problem</span>
+                            <span class="left_heading__text__line">
+                                <svg width="154" height="1" viewBox="0 0 154 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="154" height="1" fill="black"/>
+                                </svg>
+                            </span>
                         </div>
                     </div>
+
+                    <div class="logo">
+                        <img src="../images/assets/dettydec.svg" alt="">
+                    </div>
                 </div>
-                <!-- a floating card -->
+                <div 
+                    class="problem_statement__right"
+                    data-aos="fade-up-left"
+                    data-aos-offset="200"
+                    data-aos-duration="1100"
+                >
+                    <div class="right_heading">
+                        seamlessly sync travel/tourism, media and events into one iconic lifestyle brand
+                    </div>
+                    <div class="right_content">
+                        this is detty december! the party bells ring in your head when you hear the name. the name; that was just it. every other element of the brand we had to create. our task was to create a world-class and iconic lifestyle brand, with a befitting kickass brand strategy for it.
+                    </div>
+                </div>
             </div>
-            <!-- a group of two cards -->
-
 
         </div>
-        <!-- section for the floating cards -->
-
-        <!-- group for the last text in the section -->
-        <div class="section__text -secondary --second-section">
-            <div 
-                data-aos="fade-down"
-                data-aos-offset="400"
-                data-aos-duration="1200"
-            >
-                <span class="--greentext">freak’n</span>  good<span class="hide500">.</span> <br class="show500"> <span class="--greentext">freak’n</span> scary
-            </div>
-            <div 
-                class="section__text__subtext" 
-                data-aos="slide-up"
-                data-aos-offset="500"
-                data-aos-duration="1200"
-                style="margin-bottom: 0px;"
-            >
-            when powerful branding and creative business strategies are carefully 
-            fused, the possibilities are limitless for your business – it’s freak’n
-            good! the absence of it can be freak’n scary.
-            </div>
-        </div>
-
-        <!-- smaller image -->
-        <div 
-            class="lower_image"
-            data-aos="zoom-in"
-            data-aos-offset="300"
-            data-aos-duration="1200"
-        >
-            <img 
-                src="./images/lower_cube.svg"     
-                alt=""
-            >
-        </div>
-        <!-- smaller image -->
-
-        <!-- lowest text -->
-        <div 
-            class="lower__text" 
-            data-aos="fade-up"
-            data-aos-offset="500"
-            data-aos-duration="1200"
-            style="text-align: center;"
-        >
-            so here's how we help <br> 
-            your <span class="--greentext">business</span>
-        </div>
-        <!-- group for the last text in the section --> 
     </div>
     <!-- second section -->
 
     <!-- third section -->
-    <div class="section -third --new">
-        <div class="item-top-border -one">
-            <div class="item-side-border -one">
-            </div>
-                <div 
-                    class="item -one"
-                    data-aos="fade-up-right"
-                    data-aos-offset="400"
-                    data-aos-duration="1100"
-                >
-                    <div class="item__header__group">
-                        <div class="item__header --greentext">
-                            branding
-                        </div>
-                        <div class="item__subheader">
-                            your one chance 
-                            to be a god... don't bend
-                            the knee.
-                        </div>
-                    </div>
-
-                    <div class="item__list_wrapper">
-                        <div class="item__list">brand strategy</div>
-                        <div class="item__list">visual identity</div>
-                        <div class="item__list">content strategy</div>
-                        <div class="item__list">digital strategy</div>
-                        <div class="item__list">experience design</div>
-                    </div>
-
-                    <div 
-                        class="item__footer"
-                        style="margin-top: 55px;"
-                    >
-                        <span class="item__footer__text --neontextnew" id="branding-modal-open">
-                            learn more <img src="./images/green-arrow-left.svg" alt="">
-                        </span>
-                    </div>
-                </div>
-            
-        </div>
-
-        <div class="divider"> </div>
-        
-        <div class="item-top-border -two">
-            <div class="item-side-border -two">
-            </div>
-            <div 
-                class="item -two"
-                data-aos="fade-down"
-                data-aos-offset="400"
-                data-aos-duration="1100"
-            >
-
-                <div class="item__header__group">
-                    <div class="item__header --bluetextnew">
-                        business<br>
-                        intelligence
-                    </div>
-                    <div class="item__subheader">
-                        everyone wants to be 
-                        ahead of the game,
-                        play smart.
-                    </div>
-                </div>
-
-                <div class="item__list_wrapper">
-                    <div class="item__list">market research</div>
-                    <div class="item__list">business strategy</div>
-                    <div class="item__list">brand management</div>
-                </div>
-
-                <div 
-                    class="item__footer" 
-                    style="margin-top: 55px;"
-                >
-                    <span class="item__footer__text --bluetextnew" id="ideation-modal-open">
-                        learn more <img src="./images/blue-arrow-left.svg" alt="">
-                    </span>
-                </div>
-
+    <div class="section -third">
+        <div class="third-section-wrapper">
+            <div class="half_video">
+                <!-- inserts video link -->
             </div>
         </div>
-
-        <div class="divider"> </div>
-        
-        <div class="item-top-border -three">
-            <div class="item-side-border -three">
-            </div>
-            <div 
-                class="item -three"
-                data-aos="fade-up-left"
-                data-aos-offset="400"
-                data-aos-duration="1100"
-            >
-
-                <div class="item__header__group">
-                    <div class="item__header --orangetextnew">
-                        ideation
-                    </div>
-                    <div class="item__subheader">
-                        if it doesn't drive you crazy, then its definitely
-                        not an idea.
-                    </div>
-                </div>
-
-                <div class="item__list_wrapper">
-                    <div class="item__list">product ideation</div>
-                    <div class="item__list">product launch strategy</div>
-                    <div class="item__list">campaign ideation</div>
-                    <div class="item__list">brand innovation</div>
-                </div>
-
-                <div 
-                    class="item__footer"
-                    style="margin-top: 55px;"
-                >
-                    <span class="item__footer__text --orangetextnew" id="influence-modal-open">
-                        learn more <img src="./images/yellow-arrow-left.svg" alt="">
-                    </span>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="divider"> </div>
-
     </div>
     <!-- third section -->
 
     <!-- fourth section -->
     <div class="section -fourth">
+        <div class="fourth-section-wrapper">
+
+            <div class="problem_statement">
+
+                <div 
+                    class="problem_statement__left"
+                    data-aos="fade-up-right"
+                    data-aos-offset="200"
+                    data-aos-duration="1100"
+                >
+                    <div class="left_heading">
+                        <div class="left_heading__text">
+                            <span class="left_heading__text__text" >approach</span>
+                            <span class="left_heading__text__line">
+                                <svg width="154" height="1" viewBox="0 0 154 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="154" height="1" fill="black"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="logo">
+                        <img src="../images/assets/pep.svg" alt="">
+                    </div>
+                </div>
+                <div 
+                    class="problem_statement__right"
+                    data-aos="fade-up-left"
+                    data-aos-offset="200"
+                    data-aos-duration="1100"
+                >
+                    <div class="right_heading">
+                        well, we approached it with excitement and it came out exciting!
+                    </div>
+                    <div class="right_content">
+                        besides the regular fun drills of clearly defining the brand, designing an irresistible visual identity and tweaking till we see and feel all the right personality traits are well infused into the brand, we had fun getting creative with the brand and its elements. 
+                        <div class="divider"></div>
+                        at the center of it all, we found out that experience was prime especially for a lifestyle brand, and yes we just had to make it sit in the middle of the brand slogan – people. experiences. places. 
+                        <div class="divider"></div>
+                        we wanted detty december’s audience to always SEE (Simplicity. Experience. Entertainment) the experience at the center of everything – whatever product they were looking at.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- fourth section -->
+
+    <!-- fifth section -->
+    <div class="section -fifth">
+        <div class="fifth-section-wrapper">
+            <div class="full_video">
+                <!-- inserts video link here -->
+            </div>
+        </div>
+    </div>
+    <!-- fifth section -->
+
+    <!-- sixth section -->
+    <div class="section -sixth">
+        <div class="sixth-section-wrapper">
+
+            <div class="group">
+                <div class="image --half"></div>
+                <div class="image --half"></div>
+            </div>
+
+            <div class="group">
+                <div class="image --half"></div>
+                <div class="image --half"></div>
+            </div>
+
+            <div class="group">
+                <div class="image --full"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- sixth section -->
+
+    <!-- seventh section -->
+    <div class="section -seventh">
+        <div class="seventh-section-wrapper">
+            
+            <div class="problem_statement">
+
+                <div 
+                    class="problem_statement__left"
+                    data-aos="fade-up-right"
+                    data-aos-offset="200"
+                    data-aos-duration="1100"
+                >
+                    <div class="left_heading">
+                        <div class="left_heading__text">
+                            <span class="left_heading__text__text" >discoveries</span>
+                            <span class="left_heading__text__line">
+                                <svg width="154" height="1" viewBox="0 0 154 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="154" height="1" fill="black"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div 
+                    class="problem_statement__right"
+                    data-aos="fade-up-left"
+                    data-aos-offset="200"
+                    data-aos-duration="1100"
+                >
+                    <div class="right_heading">
+                        the art of time
+                    </div>
+                    <div class="right_content">
+                        the balance between your time and the client’s time. finding a balance that doesn’t compromise set quality and standard nor strain the client’s project plans and timelines is an art. an accurate breakdown of project deliverables and elements to the tiniest detail; right spacing and pacing of all project elements is key.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- seventh section -->
+
+    <!-- eight section -->
+    <div class="section -eight">
+        <div class="eight-section-wrapper">
+            <div class="carousel">
+                <div class="carousel_item">
+                    <img src="../images/landscape.jpg" alt="">
+                </div>
+                <div class="carousel_item">
+                    <img src="../images/landscape.jpg" alt="">
+                </div>
+                <div class="carousel_item">
+                    <img src="../images/landscape.jpg" alt="">
+                </div>
+                <div class="carousel_item">
+                    <img src="../images/landscape.jpg" alt="">
+                </div>
+                <div class="carousel_item">
+                    <img src="../images/landscape.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- eight section -->
+
+    <!-- ninth section -->
+    <div class="section -ninth">
         <div 
             class="first_text"
             data-aos="fade-up"
-            data-aos-offset="350"
-            data-aos-duration="1000"
+            data-aos-duration="1100"
         >
             got a project in mind?
         </div>
         <div 
             class="second-text --greentext"
             data-aos="fade-up"
-            data-aos-offset="350"
             data-aos-delay="150"
             data-aos-duration="1000"
         >
@@ -410,7 +334,6 @@
         </div>
         <div
             data-aos="fade-up"
-            data-aos-offset="350"
             data-aos-delay="300"
             data-aos-duration="1000"
         >
@@ -423,21 +346,21 @@
             </div>
         </div>
     </div>
-    <!-- fourth section -->
+    <!-- ninth section -->
 
     <!-- footer -->
     <div class="section -footer">
         <div class="right_reserved">
             <span class="right_reserved__item --first">©2020 <span class="--bold">Creffiti</span> - All Rights Reserved </span>
             <span 
-                class="right_reserved__item --second"  
+                class="right_reserved__item --second"
+                style="text-decoration: underline;"
                 onclick="sendMail()"
-                style="cursor: pointer;text-decoration: underline;"
             >
                 hello@creffiti.com
             </span>
-            <span 
-                class="right_reserved__item --third"
+            <span
+                class="right_reserved__item --second"
                 style="text-decoration: underline;"
             >
                 +2348027577659
@@ -471,400 +394,170 @@
         </div>
     </div>
     <!-- footer -->
-
-    <!-- The Modals -->
-    <!-- modal for the branding section -->
-    <div id="branding-modal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span 
-                class="close-modal branding-modal-close --greentext"
-            >
-                <img src="./images/assets/green-cross.svg" alt="">
-                <!-- &times; -->
-            </span>
-            <div class="modal-content-wrapper">
-                <div class="branding modal-content-wrapper__header  --greentext">
-                   <div class="modal-content-wrapper__header__left">
-                        branding
-                   </div> 
-                   <div class="modal-content-wrapper__header__right">
-                        your one chance to be a <br>
-                        god...don't bend the knee
-                    </div> 
-                </div>
-
-                <div class="modal-content-wrapper__body">
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            brand strategy
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                create the ultimate brand complete with an
-                                apt brand name, proper brand definitions,
-                                characteristics, and growth strategy.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            visual identity
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                functional logos and typography, colours
-                                and shapes, imagery and style guides for
-                                their proper use.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            content strategy
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                an extensive content plan that aligns 
-                                with your brand and helps you effectively
-                                communicate with your customers.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            digital strategy
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                a tailored strategy that positions your
-                                brand to look out for and leverage
-                                opportunities in the digital space.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div 
-                        class="modal-content-wrapper__body__item"
-                        style="height:195px;"
-                    >
-                        <div class="modal-content-wrapper__body__item__left">
-                            experience design
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                design products and websites with 
-                                great user experience, well in tune
-                                with your brand.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    
-    </div>
-    <!-- the modal for the branding section -->
-
-    <!-- modal for the ideation section -->
-    <div id="ideation-modal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span 
-                class="close-modal ideation-modal-close"
-            >
-                <img src="./images/assets/blue-cross.svg" alt="">
-                <!-- &times; -->
-            </span>
-            <div class="modal-content-wrapper">
-                <div class="ideation modal-content-wrapper__header  --bluetextnew">
-                   <div class="modal-content-wrapper__header__left">
-                        business<br>
-                        intelligence
-                   </div> 
-                   <div class="modal-content-wrapper__header__right">
-                        everyone wants to be ahead <br>
-                        of the game, play smart
-                    </div> 
-                </div>
-
-                <div class="modal-content-wrapper__body">
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            market research
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                find out where your market is headed,
-                                what it truly needs and how you can 
-                                best meet its needs.
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            business strategy
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                design agile and adaptive growth 
-                                strategies drawn from brand potential, 
-                                market intelligence and dynamics.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div 
-                        class="modal-content-wrapper__body__item"
-                        style="height:195px;"
-                    >
-                        <div class="modal-content-wrapper__body__item__left">
-                            brand management
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                take care of your brand to keep every 
-                                aspect of it consistent, progressive, and 
-                                contributive to continual business growth.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal for the ideation section -->
-
-    <div id="influence-modal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span 
-                class="close-modal influence-modal-close"
-            >
-                <img src="./images/assets/yellow-cross.svg" alt="">
-                <!-- &times; -->
-            </span>
-            <div class="modal-content-wrapper">
-                <div class="influence modal-content-wrapper__header  --orangetextnew">
-                   <div class="modal-content-wrapper__header__left">
-                        ideation
-                   </div> 
-                   <div class="modal-content-wrapper__header__right">
-                        if it doesn't drive you crazy, <br>
-                        then it's definitely not an idea
-                    </div> 
-                </div>
-
-                <div class="modal-content-wrapper__body">
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            product ideation
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                get unique product ideas that align with your brand and business goals, and leave powerful impressions on your customers.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            product launch strategy
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                get strategic product launch ideas that make for an unusual and unforgettable market entrance.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-content-wrapper__body__item">
-                        <div class="modal-content-wrapper__body__item__left">
-                            campaign ideation
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                ideas blended with strategies specially developed and adapted to achieve set objectives of your campaign.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div 
-                        class="modal-content-wrapper__body__item"
-                        style="height:195px;"
-                    >
-                        <div class="modal-content-wrapper__body__item__left">
-                            brand innovation
-                        </div>
-                        <div class="modal-content-wrapper__body__item__right">
-                            <div class="modal-content-wrapper__body__item__right__text">
-                                keep your brand refreshed and relevant with innovations that are well in sync with your customer needs.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal for the influence section -->
-
-    <!-- modal for the influence section -->
-    <!-- The Modals -->
-    <!-- <script src="./styles/jQuery.js"></script> -->
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
+</body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous">
 </script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- script for the modal -->
-    <script>
-        //redirecting function
-        function goTo(link,newPage = ""){
-            //go to the link passed in
-            //it is an alternative to using anchor tags
-            //because they are difficult to style
-            if (!newPage){
-                window.location.assign(link)
-            }
-            else{
-                window.open(link,"_blank")
-            }
-        }
-
-        // function for sending a mail
-        function sendMail(){
-            window.location.href = "mailto:hello@creffiti.com";
-        }
-
-
-        // Get the modals
-        var brandingModal = $("#branding-modal");
-        var ideationModal = $("#ideation-modal");
-        var influenceModal = $("#influence-modal");
-
-
-        // Get the buttons that opens the modals
-        var brandingBtn = $("#branding-modal-open");
-        var ideationBtn = $("#ideation-modal-open");
-        var influenceBtn = $("#influence-modal-open")
-     
-        // Get the <span> element that closes the modal
-        var brandingSpan = $(".branding-modal-close");
-        var ideationSpan = $(".ideation-modal-close");
-        var influenceSpan = $(".influence-modal-close");
-
-        // When the user clicks on the buttons, open the right modal
-        brandingBtn.on("click",(e)=>{
-            $("body").css({'overflow':"hidden"})
-            brandingModal.fadeIn();
-            brandingModal.scrollTop(0)
-        });
-
-        ideationBtn.on("click",(e)=>{
-            ideationModal.fadeIn();
-            ideationModal.scrollTop(0)
-            $("body").css({'overflow':"hidden"})
-        })
-
-        influenceBtn.on("click", (e)=>{
-            $("body").css({'overflow':"hidden"})
-            influenceModal.fadeIn();
-            influenceModal.scrollTop(0)
-        })
-
-        // When the user clicks on <span> (x), close the modal
-        brandingSpan.on("click", function() {
-            $("body").css({'overflow-y':"scroll"})
-            brandingModal.fadeOut();
-        })
-        ideationSpan.on("click", function() {
-            $("body").css({'overflow-y':"scroll"})
-            ideationModal.fadeOut();
-        })
-        influenceSpan.on("click", function() {
-            $("body").css({'overflow-y':"scroll"})
-            influenceModal.fadeOut();
-        })
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (
-                event.target == document.getElementById("branding-modal")
-                ||
-                event.target == document.getElementById("ideation-modal")
-                ||
-                event.target == document.getElementById("influence-modal")
-            ) {
-
-                brandingModal.fadeOut();
-                ideationModal.fadeOut();
-                influenceModal.fadeOut();
-                $("body").css({'overflow-y':"scroll"})
-            }
-        }
-    </script>
-    <script>
-      AOS.init(
+				
+<script>
+    AOS.init(
         {
-            duration: 1500, // values from 0 to 3000, with step 50ms
-            disable: function() {
-                var maxWidth = 1000;
-                return window.innerWidth < maxWidth;
-              }
+          duration: 1500, // values from 0 to 3000, with step 50ms
+          disable: function() {
+          var maxWidth = 1000;
+          return window.innerWidth < maxWidth;
+          }
         }
       );
-    </script>
-    <script>
+    const scrollDirection = {
+        "up":true,
+        "down":false
+    }
+    let previousScroll = 0
+    document.addEventListener('scroll', ()=>{
+        if(window.scrollY  < previousScroll){
+            $("#image0").addClass("imageeasein")
+            $("#image0").removeClass("imageeaseout")
 
-        const scrollDirection = {
-            "up":true,
-            "down":false
+            $(".rectanglepart").addClass("rectreduce")
+            $(".rectanglepart").removeClass("rectincrease")
+
+            $(".--nav__sub").addClass("textfadein")
+            $(".--nav__sub").removeClass("textfadeout")
+
+            $(".navigation").addClass("--whitebg")
         }
-        let previousScroll = 0
-        document.addEventListener('scroll', ()=>{
-            if(window.scrollY  < previousScroll){
-                $("#image0").addClass("imageeasein")
-                $("#image0").removeClass("imageeaseout")
+        else{
+            $("#image0").addClass("imageeaseout")
+            $("#image0").removeClass("imageeasein")
 
-                $(".rectanglepart").addClass("rectreduce")
-                $(".rectanglepart").removeClass("rectincrease")
+            $(".rectanglepart").addClass("rectincrease")
+            $(".rectanglepart").removeClass("rectreduce")
 
-                $(".--nav__sub").addClass("textfadein")
-                $(".--nav__sub").removeClass("textfadeout")
+            $(".--nav__sub").removeClass("textfadein")
+            $(".--nav__sub").addClass("textfadeout")
 
-                $(".navigation").addClass("--whitebg")
+            $(".navigation").removeClass("--whitebg")
+
+        }
+        previousScroll =window.scrollY 
+
+    })
+    //redirecting function
+    function goTo(link,newPage = ""){
+        //go to the link passed in
+        //it is an alternative to using anchor tags
+        //because they are difficult to style
+        if (!newPage){
+            window.location.assign(link)
+        }
+        else{
+            window.open(link,"_blank")
+        }
+    }
+
+    // function for sending a mail
+    function sendMail(){
+        window.location.href = "mailto:hello@creffiti.com";
+    }
+
+    document.addEventListener('scroll', () => {
+        if(window.scrollY == 0){
+
+        }
+        else{
+
+        }
+        //document.documentElement.dataset.scroll = window.scrollY;
+      });
+
+    window.dispatchEvent(new Event('resize'));
+</script>
+
+<!-- slickjs -->
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        arrows:true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow:`
+        <span class="previous arrow">
+            <svg width="36" height="61" viewBox="0 0 36 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M34 2L3 32.1765L34 59" stroke="#030303" stroke-width="3"/>
+            </svg>
+        </span>`,
+        nextArrow:`
+        <span  class="next arrow">
+
+            <svg width="36" height="61" viewBox="0 0 36 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L33 32.1765L2 59" stroke="#030303" stroke-width="3"/>
+            </svg>
+                
+        </span>
+        `,
+        //arrows:false,
+        responsive: [
+        {
+            breakpoint: 1526,
+            settings: {
+            centerMode: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              arrows:false
             }
-            else{
-                $("#image0").addClass("imageeaseout")
-                $("#image0").removeClass("imageeasein")
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              arrows:false
+            }
+          },
 
-                $(".rectanglepart").addClass("rectincrease")
-                $(".rectanglepart").removeClass("rectreduce")
-
-                $(".--nav__sub").removeClass("textfadein")
-                $(".--nav__sub").addClass("textfadeout")
-
-                $(".navigation").removeClass("--whitebg")
+          {
+            breakpoint: 850,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows:false,
+              dots: true,
+              centerMode: true,
 
             }
-            previousScroll =window.scrollY 
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              arrows:false,
+              slidesToScroll: 1,
+              dots: true,
+              centerMode: true,
 
-        })
-    </script>
-</body>
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+</script>
+<!-- slickjs -->
 
 </html>
