@@ -1,0 +1,95 @@
+/* animations for the landing page */
+
+/* animations for the cream window */
+/* takes 800ms */
+@keyframes slideleft{
+    0%{
+        height: 0;
+    }
+
+}
+.--slideleft_animation{
+    animation: slideleft 1000ms ease-in  forwards;
+}
+/* animations for the cream window */
+
+/* animations for the first section */
+
+/* slidedown animation for the image */
+@keyframes slidedown{
+    100%{
+        margin-top: 0px;
+    }
+}
+.--slidedown_animation{
+    margin-top: calc( 0px - 49vh);
+    animation: slidedown 1500ms ease-in-out 450ms forwards;
+}
+/* slidedown animation for the image */
+
+/* fading animation for the home text */
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.--fadein_animation{
+    opacity: 0;
+    animation: fadein 900ms ease-in forwards;
+}
+.--fadein_animation_new{
+    opacity: 0;
+    animation: fadein 1500ms ease-in forwards;
+}
+.--delay__one{
+    animation-delay: 790ms;
+}
+.--delay__two{
+    animation-delay: 1000ms;
+}
+/* fading animation for the home text */
+
+/* animation to set the initial state of the button */
+
+/* sliding animation for the images */
+[data-aos="pic_slide_down"] {
+    margin-top: -40px !important;
+    transition-property: margin;
+}
+[data-aos="pic_slide_down"].aos-animate {
+    margin-top: 60px !important;
+}
+
+[data-aos="pic_slide_up"] {
+    margin-top: 50px !important;
+    transition-property: margin;
+}
+[data-aos="pic_slide_up"].aos-animate {
+    margin-top: 0px !important;
+}
+@media (max-width : 500px){
+    [data-aos="pic_slide_down"] {
+        margin-top: -10px !important;
+        transition-property: margin;
+    }
+    [data-aos="pic_slide_down"].aos-animate {
+        margin-top: 20px !important;
+    }
+    
+    [data-aos="pic_slide_up"] {
+        margin-top: 10px !important;
+        transition-property: margin;
+    }
+    [data-aos="pic_slide_up"].aos-animate {
+        margin-top: 0px !important;
+    } 
+}
+/* sliding animation for the images */
+.section.-third{
+    overflow: hidden;
+}
+
+/* animations for the first section */

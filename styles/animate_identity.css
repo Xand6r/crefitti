@@ -1,0 +1,85 @@
+/* animations for the landing page */
+
+/* animations for the cream window */
+/* takes 800ms */
+@keyframes slideleft{
+    0%{
+        height: 0px;
+    }
+
+}
+.--slideleft_animation{
+    animation: slideleft 1000ms ease-in  forwards;
+}
+/* animations for the cream window */
+
+/* slidedown animation for the image */
+@keyframes slidedown{
+    100%{
+        margin-top: 0px;
+    }
+}
+.--slidedown_animation{
+    margin-top: calc( 0px - 49vh);
+    animation: slidedown 1500ms ease-in-out 450ms forwards;
+}
+/* slidedown animation for the image */
+
+/* fading animation for the home text */
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.--fadein_animation{
+    opacity: 0;
+    animation: fadein 900ms ease-in forwards;
+}
+.--fadein_animation_new{
+    opacity: 0;
+    animation: fadein 1500ms ease-in forwards;
+}
+.--delay__one{
+    animation-delay: 800ms;
+}
+.--delay__two{
+    animation-delay: 1100ms;
+}
+.--delay__three{
+    animation-delay: 1300ms;
+}
+/* fading animation for the home text */
+
+/* the creffs animation */
+.section__group.is-visible{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    display: block;
+}
+/* the creffs animation */
+.--transparent{           
+    background-color: transparent !important;
+}
+
+
+.--hidden-faded{
+    opacity: 0;
+}
+.--show{
+    opacity: 1;
+}
+.right__text{
+    transition: 500ms;
+}
+.right__image img{
+    transition: 700ms;
+}
+.right__image img{
+    width: 283px;
+}
+
+/* new styles for mobile */

@@ -1,0 +1,138 @@
+
+
+/* fonts for the house */
+@font-face {
+    font-family: manrope-extra-bold;
+    src: url(../fonts/Manrope-ExtraBold.otf);
+}
+@font-face {
+    font-family: manrope-bold;
+    src: url(../fonts/Manrope-Bold.otf);
+}
+@font-face {
+    font-family: manrope-semi-bold;
+    src: url(../fonts/Manrope-Bold.otf);
+}
+@font-face{
+    font-family: manrope-light;
+    src: url(../fonts/Manrope-Light.otf);
+}
+@font-face{
+    font-family: manrope-medium;
+    src: url(../fonts/Manrope-Medium.otf);
+}
+@font-face{
+    font-family: manrope;
+    src: url(../fonts/Manrope-Regular.otf);
+}
+/* fonts for the house */
+body{
+    margin: 0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    height: 60px;
+    align-items: center;
+    font-family: 'manrope-bold';
+}
+
+.itemsbox{
+    display: flex;
+    /* align-items: center; */
+    width: 800px;
+    justify-content: space-between;
+}
+.item{
+    cursor: pointer;
+}
+
+.logo{
+    height: 50px;
+}
+
+#hi{
+    border: 2px solid black;
+    padding: 5px 40px;
+}
+
+.contentone{
+    height: 350px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentone__text{
+    font-size: 80px;
+    font-family: 'manrope-bold';
+    margin: 300px auto;
+    line-height: 90px;
+}
+
+.background{
+    background: linear-gradient(
+        white,
+        rgb(230, 230, 171)
+    );
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    left: 0;
+    z-index: -1;
+}
+.contentone__text span{
+    color: green;
+}
+
+.bigimage_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.bigimage{
+    height: 400px;
+}
+
+.contenttwo{
+    margin: 150px auto;
+
+}
+
+.contenttwo__bigtext{
+    font-size: 50px;
+    font-family: manrope-bold;
+    text-align: center;
+}
+.contenttwo_smalltext{
+    max-width: 450px;
+    font-size: 20px;
+    font-family: 'manrope-medium';
+    text-align: center;
+    margin: 0px auto;
+}
+
+.contentthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: manrope-medium;
+}
+.row{
+    display: flex;
+}
+
+.card{
+    margin: 10px 25px;
+}
+.card_head{
+    text-align: center;
+    font-size: 29px;
+}
+
+.card_subhead{
+    text-align: center;
+    font-size: 15px;
+}
