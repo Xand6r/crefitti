@@ -580,6 +580,14 @@ span.section__text__text.-three{
     flex-direction: row;
 }
 
+.card_item{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .card_item:nth-child(even){
     margin-left: 65px;
     margin-top: 50px;
