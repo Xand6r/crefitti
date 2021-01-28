@@ -1,5 +1,5 @@
  /* fonts for the house */
-@font-face {
+ @font-face {
     font-family: manrope-extra-bold;
     src: url(../fonts/Manrope-ExtraBold.otf);
 }
@@ -645,14 +645,14 @@ body{
     object-fit: cover;
 }
 .image.--half{
-    width: calc(50vw - 168px);
+    width: calc(50vw - 163px);
     height: 495px;
 }
 .image.--long{
     height: calc(495px * 2 + 10px);
 }
 .image.--full{
-    width: calc(100vw - 325px)/*1141px*/;
+    width: calc(100vw - 315px)/*1141px*/;
     min-height: 495px;
 }
 .image.--full img{
@@ -660,12 +660,12 @@ body{
     height: 100%;
     object-fit: cover;
 }
-/* .group .image.--half:first-of-type {
+.group .image.--half:first-of-type {
     margin-left: 0px ;
 }
 .group .image.--half:nth-of-type(2) {
     margin-right: 0px ;
-} */
+}
 
 @media (max-width : 1450px){
     .image.--half{

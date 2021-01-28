@@ -507,11 +507,13 @@ screensize is less than 512px */
 }
 
 .card_item__image_content.--dettydecember:hover{
-    box-shadow: 12px 12px 0px #FF7901;
+    box-shadow: 12px 12px 0px #FBBE19;
 }
 
 .card_item__sub_text{
     margin-top: 40px;
+    max-width: 430px;
+
 }
 .card_item__sub_text *{
     text-align: center;
