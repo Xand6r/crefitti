@@ -670,8 +670,9 @@ body{
 @media (max-width : 1450px){
     .image.--half{
         width: calc(100vw / 2 - 159.998px);
-        height: 395px;
+        /* height: 395px; */
     }
+
     .image.--full{
         width: calc(100vw - 300px);
     }
@@ -687,7 +688,7 @@ body{
     }
     .image.--half{
         width: calc(100vw / 2 - 59.998px);
-        height: 395px;
+        /* height: 395px; */
     }
     .image.--full{
         width: calc(100vw - 100px);
