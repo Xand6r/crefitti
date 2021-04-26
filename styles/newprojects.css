@@ -237,10 +237,18 @@ body{
 
 /* the second section with a yellow background */
 .section.-first{
-    background: #FBBE19;
     padding-top: 210px;
     padding-bottom: 268px;
     padding-left: 347px;
+}
+.section.-first.--dirty{
+    background: #FBBE19;
+}
+.--dirtyline{
+    fill: black;
+}
+.--spireline{
+    fill: white
 }
 .first-section-wrapper{
     max-width: 774px;
@@ -254,10 +262,23 @@ body{
     color: #030303;
     margin-bottom: 64px;
 }
+/* modifications for speakspire */
+.section.-first.--spire{
+    background: #4D75F3;
+    color: white;
+}
+.section.-first.--spire .biggercontent{
+    color: white;
+    font-size: 70px;
+}
+.section.-first.--spire .first-section-wrapper{
+    max-width: unset;
+}
+/* modifications for speakspire */
 .subcontent{
-    max-width: 582px;
+    /* max-width: 582px;
+    justify-content: space-between; */
     display: flex;
-    justify-content: space-between;
 }
 .subcontent__left{
     font-family: manrope-semi-bold;
@@ -265,17 +286,21 @@ body{
     font-weight: 600;
     font-size: 30px;
     line-height: 40px;
+    margin-right: 35px;
+}
+.subcontent__middle{
+    margin-top: 9.4px;
+    margin-right: 35px;
 }
 .subcontent__right{
     font-family: manrope-medium;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #000000;
     line-height: 34px;
 }
-.subcontent__middle{
-    margin-top: 9.4px;
+.subcontent__right.--first{
+    margin-right: 100px;
 }
 
 /* corresponding breapoints  */
