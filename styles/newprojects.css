@@ -555,7 +555,7 @@ body{
         padding-right: 50px;
     }
     .half_video {
-        height: 300px;
+        height: unset;
     }
 }
 @media (max-width : 600px){
@@ -768,6 +768,9 @@ body{
     margin-top: 216px;
     padding-left: 150px;
     padding-right: 150px;
+}
+.seventh-section-wrapper.--sub{
+    margin-top: 70px;
 }
 
 @media (max-width : 1000px){
