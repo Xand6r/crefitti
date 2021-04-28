@@ -678,6 +678,9 @@ span.section__text__text.-three{
     position: absolute;
     left: 80%;
     bottom: 7%;
+    z-index: -1;
+    transition: 100ms;
+
 }
 
 .right .right__image img{
