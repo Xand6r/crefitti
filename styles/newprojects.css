@@ -325,12 +325,20 @@ body{
         font-size: 60px;
         line-height: 75px;
     }
+    .section.-first.--spire .biggercontent{
+        font-size: 50px;
+        line-height: 85px;
+    }
     /* adjust the navgation's padding */
 }
 @media (max-width : 800px){
     .biggercontent{
         font-size: 50px;
         line-height: 70px;
+    }
+    .section.-first.--spire .biggercontent{
+        font-size: 40px;
+        line-height: 75px;
     }
     .subcontent__middle{
         display: none;
@@ -351,11 +359,19 @@ body{
         line-height: 70px;
         margin-bottom: 45px;
     }
+    .section.-first.--spire .biggercontent{
+        font-size: 30px;
+        line-height: 75px;
+    }
 }
 @media (max-width : 500px){
     .biggercontent{
         font-size: 37px;
         line-height: 58px;
+    }
+    .section.-first.--spire .biggercontent{
+        font-size: 30px;
+        line-height: 65px;
     }
     .navigation {
         padding-left: 30px;
@@ -373,6 +389,10 @@ body{
         font-size: 34px;
         line-height: 50px;
         margin-bottom: 50px;
+    }
+    .section.-first.--spire .biggercontent{
+        font-size: 25px;
+        line-height: 55px;
     }
     .subcontent__left{
         font-size: 20px;
