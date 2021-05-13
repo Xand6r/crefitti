@@ -493,7 +493,7 @@ span.section__text__text.-three{
     overflow: hidden;
 }
 .image-slider__wrapper{
-    margin-left:37.13px;
+    margin-left: 15.13px;
 }
 /* section for the image slider */
 
@@ -1256,7 +1256,7 @@ button{
 /* specific to highlighted creff */
 /* animations for the creffs */
 .social_media .--half-boxed{
-    padding: 1px 15px;
+    padding: 1px 8px;
 }
 .--thicc{
     border: 3px solid #000000 !important;

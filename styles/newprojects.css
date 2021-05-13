@@ -559,8 +559,8 @@ body{
     height: 444px;
     /* background: black; */
 }
-.half_video .img{
-    width: 100%;
+.half_video img{
+    width: 80%;
     object-fit: cover;
 }
 /* third section queries */
@@ -577,6 +577,10 @@ body{
     }
     .half_video {
         height: unset;
+    }
+    .half_video img{
+        width: 100%;
+        object-fit: cover;
     }
 }
 @media (max-width : 600px){
@@ -1136,7 +1140,7 @@ body{
     }
 }
 .social_media .--half-boxed{
-    padding: 1px 15px;
+    padding: 1px 8px;
 }
 
 @media (max-width : 500px){
