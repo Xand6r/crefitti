@@ -561,7 +561,8 @@ span.section__text__text.-three{
 }
 .person-image-size{
     width: 299px;
-    height: 296px; 
+    height: 296px;
+    object-fit: cover;
    }
 /* styling for the image */
 
