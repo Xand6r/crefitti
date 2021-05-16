@@ -839,6 +839,7 @@
         }
         let previousScroll = 0
         document.addEventListener('scroll', ()=>{
+            if(window.innerWidth < 500) return;
             if(window.scrollY  < previousScroll){
                 $("#image0").addClass("imageeasein")
                 $("#image0").removeClass("imageeaseout")
@@ -864,7 +865,7 @@
                 $(".navigation").removeClass("--whitebg")
 
             }
-            previousScroll =window.scrollY 
+            previousScroll = window.scrollY 
 
         })
     </script>
