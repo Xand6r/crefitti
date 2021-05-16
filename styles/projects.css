@@ -821,7 +821,7 @@ span.section__text__text.-three{
         flex-direction: column;
     }
     .collection__right{
-        /* display:none; */
+        display:none;
     }
 }
 
