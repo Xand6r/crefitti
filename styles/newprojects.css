@@ -762,8 +762,8 @@ body{
     }
     .image.--full{
         width: calc(100vw - 100px);
-        height: 395px;
-
+        height: unset;
+        min-height: unset;
     }
 }
 
@@ -1277,4 +1277,16 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 12px; 
+}
+
+.--smallimageshow{
+    display: none;
+}
+@media (max-width : 700px){
+    .--smallimagehide{
+        display: none;
+    }
+    .--smallimageshow{
+        display: initial;
+    }
 }
