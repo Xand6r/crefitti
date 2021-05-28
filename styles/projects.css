@@ -1491,3 +1491,13 @@ span.section__text__text.-three{
     font-size: 12px; 
 }
 
+.--smallimageshow{
+    display: none;
+}
+@media (max-width : 700px){
+    .--smallimageshow{
+        display: initial;
+        width: 71px;
+        margin-bottom: 15px;
+    }
+}
