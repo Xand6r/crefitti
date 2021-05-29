@@ -1085,7 +1085,9 @@ button{
     text-align: left;
     padding-left: 50px;
     padding-right: 50px;
-    line-height:50px
+    line-height:50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .message__modal__image{
     background:#E4FCFE;
@@ -1101,6 +1103,7 @@ button{
 
 .message__modal__wrapper{
     display: flex;
+    flex-direction: column;
 }
 
 @media (max-width : 1268px){
