@@ -389,45 +389,62 @@
     <script>
         $("#form").submit(function(e){
             e.preventDefault();
+            let myForm = document.getElementById('form');
+            let formData = new FormData(myForm);
+
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                showModal();
+                $("#name").val("");
+                $("#email").val("");
+                $("#number").val("");
+                $("#project").val("");
+            }).catch((error) =>{
+                alert(error);
+            });
             //send the mail since the form has been submitted
-            const name = $("#name").val();
-            const email = $("#email").val();
-            const phonenumber = $("#number").val();
-            const project = $("#project").val();
-            //create the template
-            const template = `
-            Hi!,\n
-            My name is ${name}. it is a pleasure to meet you team crefitti.\n
-            The project i have in mind goes:${project}.\n
-            I can be reached via my mail: ${email} as well as my phone number:${phonenumber}.\n
-            I look foward to our discussion. \n
-            cheers.
-            `
-            //send the mail
-            Email.send({
-                //SecureToken : "3503c9db-f448-4ab8-96b1-c06409724934",
-                Host : "smtp.elasticemail.com",
-                Username : "shuaibualexander@gmail.com",
-                Password : "07981148B4612FBED5A50A9ADE274D154CC6",
-                To : 'hello@creffiti.com',
-                From : "shuaibualexander@gmail.com",
-                Subject : "Hi crefitti!",
-                Body : template
-            }).then(
-              message =>{
-                   if (message == "OK"){
-                       //alert("Thank you for saying hi!, we would be in touch.");
-                       showModal()
-                       $("#name").val("");
-                       $("#email").val("");
-                       $("#number").val("");
-                       $("#project").val("");
-                   }
-                   else{
-                       showModal()
-                   }
-                }
-            );
+            // const name = $("#name").val();
+            // const email = $("#email").val();
+            // const phonenumber = $("#number").val();
+            // const project = $("#project").val();
+            // //create the template
+            // const template = `
+            // Hi!,\n
+            // My name is ${name}. it is a pleasure to meet you team crefitti.\n
+            // The project i have in mind goes:${project}.\n
+            // I can be reached via my mail: ${email} as well as my phone number:${phonenumber}.\n
+            // I look foward to our discussion. \n
+            // cheers.
+            // `
+            // //send the mail
+            // Email.send({
+            //     //SecureToken : "3503c9db-f448-4ab8-96b1-c06409724934",
+            //     Host : "smtp.elasticemail.com",
+            //     Username : "shuaibualexander@gmail.com",
+            //     Password : "07981148B4612FBED5A50A9ADE274D154CC6",
+            //     To : 'professor.alex88@creffiti.com',
+            //     From : "shuaibualexander@gmail.com",
+            //     Subject : "Hi crefitti!",
+            //     Body : template
+            // }).then(
+            //   message =>{
+            //        if (message == "OK"){
+            //            //alert("Thank you for saying hi!, we would be in touch.");
+            //            showModal()
+            //            $("#name").val("");
+            //            $("#email").val("");
+            //            $("#number").val("");
+            //            $("#project").val("");
+            //        }
+            //        else{
+            //            showModal()
+            //        }
+            //     }
+            // );
 
         });
 </script>
