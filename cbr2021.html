@@ -2,11 +2,426 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Review</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creffiti</title>
+   <link rel="stylesheet" href="./styles/cbr2021.css">
+   <script src="https://kit.fontawesome.com/58877336b3.js"></script>
+   <!-- <link rel="stylesheet" href="./styles/animate_identity.css"> -->
+   <!-- <link rel="stylesheet" href="./styles/aos.css" /> -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- Hotjar Tracking Code for www.creffiti.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2430732,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRBL7T9NMC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TRBL7T9NMC');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 </head>
+
 <body>
-    
+    <!-- the top navigation -->
+    <div class="nav_wrapper">
+        <nav class="navigation">
+            <div class="navigation__logo__icon"  onclick="goTo('index.html')">
+                <svg width="97" height="35" viewBox="0 0 97 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="image0" d="M7.3634 9.75204C9.75103 9.75204 11.0086 11.1383 11.2031 12.6813H14.4169C14.0767 9.69779 11.847 6.94336 7.3634 6.94336C3.26857 6.94336 0 9.75204 0 14.0977C0 18.4433 3.26857 21.2459 7.3634 21.2459C11.8774 21.2459 14.0767 18.4975 14.4169 15.514H11.2031C10.9965 17.057 9.75103 18.4433 7.3634 18.4433C6.78361 18.4696 6.20472 18.3747 5.66424 18.1649C5.12375 17.9551 4.63373 17.635 4.22591 17.2253C3.8181 16.8156 3.5016 16.3255 3.29691 15.7867C3.09222 15.2479 3.00391 14.6725 3.0377 14.0977C3.00391 13.5228 3.09222 12.9474 3.29691 12.4086C3.5016 11.8698 3.8181 11.3797 4.22591 10.97C4.63373 10.5603 5.12375 10.2402 5.66424 10.0304C6.20472 9.82056 6.78361 9.72573 7.3634 9.75204V9.75204Z" fill="black"/>
+                    <path class="image0" d="M22.795 6.94344C21.9029 6.87073 21.014 7.11604 20.2879 7.63528C19.5618 8.15452 19.0462 8.91365 18.8338 9.77623V7.28097H16.3125V20.9145H19.3198V11.9641C19.2923 11.644 19.3333 11.3217 19.4401 11.0184C19.547 10.715 19.7174 10.4376 19.94 10.2042C20.1626 9.97085 20.4325 9.78683 20.7318 9.66425C21.0312 9.54166 21.3534 9.48329 21.6771 9.49295C22.8922 9.49295 23.5483 10.4453 23.5483 11.7532H26.422C26.5556 8.58887 24.7634 6.94344 22.795 6.94344Z" fill="black"/>
+                    <path class="image0" d="M34.1013 6.94336C30.456 6.94336 27.23 9.75204 27.23 14.0977C27.23 18.4433 30.213 21.2459 34.2532 21.2459C38.1961 21.2459 40.1159 19.1123 40.5837 16.5929H37.7587C37.4184 17.726 36.4525 18.6844 34.2835 18.6844C31.9992 18.6844 30.6383 17.3945 30.4196 15.1343H40.6323C40.7166 14.7893 40.7514 14.4342 40.7356 14.0796C40.7356 9.64355 37.7283 6.94336 34.1013 6.94336ZM30.456 12.838C30.6383 10.6983 31.9384 9.49287 33.9858 9.49287C36.0333 9.49287 37.3273 10.5958 37.5096 12.838H30.456Z" fill="black"/>
+                    <path class="image0" d="M58.6095 2.54951C58.8156 2.53266 59.0231 2.55881 59.2185 2.62629C59.4139 2.69376 59.5929 2.80106 59.7439 2.94128C59.895 3.08151 60.0148 3.25155 60.0957 3.44047C60.1765 3.62939 60.2166 3.83301 60.2134 4.03823H62.8562C62.7286 2.08541 61.5135 0 58.6034 0C55.8755 0 53.9861 1.64543 53.9861 4.34562V7.28087H46.6956V4.21905C46.6726 3.99927 46.6978 3.77717 46.7692 3.5679C46.8406 3.35862 46.9567 3.16708 47.1095 3.00633C47.2623 2.84559 47.4482 2.71942 47.6546 2.63643C47.861 2.55343 48.0831 2.51556 48.3056 2.5254C48.5146 2.50748 48.7251 2.5336 48.9232 2.60204C49.1214 2.67049 49.3027 2.77973 49.4553 2.92258C49.6079 3.06543 49.7283 3.23867 49.8087 3.43094C49.889 3.62321 49.9275 3.83017 49.9216 4.03823H52.5644C52.4368 2.08541 51.2157 0 48.3116 0C45.5899 0 43.6943 1.64543 43.6943 4.34562V7.28087H41.2642V9.98106H43.6943V20.9144H46.732V9.98106H54.0225V20.9144H57.0298V9.98106H60.9728V7.28087H56.9995V4.21905C56.9802 4.00117 57.0081 3.78174 57.0812 3.57541C57.1543 3.36908 57.271 3.1806 57.4233 3.02257C57.5757 2.86453 57.7604 2.74059 57.9649 2.65901C58.1695 2.57743 58.3892 2.5401 58.6095 2.54951V2.54951Z" fill="black"/>
+                    <path class="image0" d="M66.1733 7.28076H63.166V20.9143H66.1733V7.28076Z" fill="black"/>
+                    <path class="image0" d="M73.8829 3.80908H70.8452V7.28075H68.415V9.98094H70.8452V17.0569C70.8452 19.9078 72.6132 21.2759 75.5415 21.2759C76.238 21.282 76.9305 21.1699 77.5889 20.9444V18.3949C77.0601 18.5605 76.5091 18.6458 75.9546 18.6481C74.5269 18.6481 73.8525 18.0453 73.8525 16.5144V9.98094H77.7955V7.28075H73.8525L73.8829 3.80908Z" fill="black"/>
+                    <path class="image0" d="M83.1665 7.28076H80.1592V20.9143H83.1665V7.28076Z" fill="black"/>
+                    <path class="rectanglepart" d="M93.7617 7.28076H92.6438H88.1602V11.6023H92.6438V16.0503H96.9999V11.6023V10.3667V7.28076H93.7617Z" fill="#24CE80"/>
+                    <path class="rectanglepart" d="M92.6438 26.2305V30.6785H88.1602V35.0001H92.6438H93.8832H96.9999V31.7876V30.6785V26.2305H92.6438Z" fill="#24CE80"/>
+                    <path class="rectanglepart" d="M73.4151 30.6785V26.2305H69.0591V30.6785V31.7876V35.0001H72.1697H73.4151H77.8988V30.6785H73.4151Z" fill="#24CE80"/>
+                </svg>     
+            </div>
+            <div class="navigation__meta --smallhide --nav__sub">
+                <div class="navigation__meta__item --half-boxed " onclick="goTo('theclan.html')">
+                    the clan
+                </div>
+                <div class="navigation__meta__item --half-boxed" onclick="goTo('work.html')">
+                    work
+                </div>
+                <div class="navigation__meta__item --half-boxed" onclick="goTo('https:\/\/medium.com/@creffiti',true)" >
+                    scribbles
+                </div>
+                <div class="navigation__meta__item --half-boxed --current_page" onclick="goTo('cbr2021.html')" >
+                    brand review
+                </div>
+                <div class="navigation__meta__item --boxed" onclick="goTo('sayhi.html')">
+                    say hi
+                </div>
+            </div>
+            <div 
+                class="navigation__meta__item --smallshow -hamburger  --nav__sub"
+            >
+
+            <div class="dropdown">
+                <i class="fas fa-bars --greentext dropbtn"></i>
+                <div class="dropdown-content">
+                    <a onclick="goTo('theclan.html')"  class="mobile_nav">
+                        the clan
+                    </a>
+                    <a onclick="goTo('work.html')" class="mobile_nav">
+                        work
+                    </a>
+                    <a onclick="goTo('https:\/\/medium.com/@creffiti',true)"  class="mobile_nav">
+                        scribbles
+                    </a>
+                    <a onclick="goTo('cbr2021.html')"  class="mobile_nav">
+                        brand review
+                    </a>
+                    <a onclick="goTo('sayhi.html')" class="mobile_nav">
+                        say hi
+                    </a>
+                </div>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- the top navigation -->
+
+    <!-- the main content of the dapp -->
+    <div class="content">
+        <!-- the first group of the landing content -->
+        <div class="group one">
+            <div class="left">
+                <img src="./images/review/landing.svg" alt="">
+                <p>The Brand Review Everyone Can Relate To</p>
+                <div class="actions">
+                    <div onclick="scrollDownToForm()" class="action_button dark">
+                        <img src="./images/review/download.svg" alt="">
+                        Download Review
+                    </div>
+                    <div onclick="togglePreview(event)" class="action_button light">
+                        <svg width="20" height="17" viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C14.9838 0 19.1302 3.66444 20 8.5C19.1312 13.3356 14.9838 17 10 17C5.01618 17 0.869766 13.3356 0 8.5C0.868842 3.66444 5.01618 0 10 0ZM10 15.1111C11.8851 15.1107 13.7142 14.4564 15.188 13.2554C16.6617 12.0544 17.6929 10.3778 18.1126 8.5C17.6913 6.62368 16.6595 4.94889 15.1859 3.74947C13.7123 2.55005 11.884 1.89694 10 1.89694C8.116 1.89694 6.28772 2.55005 4.8141 3.74947C3.34048 4.94889 2.30869 6.62368 1.88742 8.5C2.30714 10.3778 3.33827 12.0544 4.81204 13.2554C6.28581 14.4564 8.11492 15.1107 10 15.1111ZM10 12.75C8.89687 12.75 7.83893 12.3022 7.0589 11.5052C6.27887 10.7082 5.84065 9.62717 5.84065 8.5C5.84065 7.37283 6.27887 6.29183 7.0589 5.4948C7.83893 4.69777 8.89687 4.25 10 4.25C11.1031 4.25 12.1611 4.69777 12.9411 5.4948C13.7211 6.29183 14.1593 7.37283 14.1593 8.5C14.1593 9.62717 13.7211 10.7082 12.9411 11.5052C12.1611 12.3022 11.1031 12.75 10 12.75ZM10 10.8611C10.6128 10.8611 11.2006 10.6124 11.6339 10.1696C12.0673 9.72676 12.3108 9.12621 12.3108 8.5C12.3108 7.87379 12.0673 7.27324 11.6339 6.83044C11.2006 6.38765 10.6128 6.13889 10 6.13889C9.38715 6.13889 8.7994 6.38765 8.36605 6.83044C7.9327 7.27324 7.68925 7.87379 7.68925 8.5C7.68925 9.12621 7.9327 9.72676 8.36605 10.1696C8.7994 10.6124 9.38715 10.8611 10 10.8611Z" fill="#030303"/>
+                        </svg>
+                            
+                        Preview 
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img class="cover__image" src="./images/review/CBR 2021 - Cover.jpg" alt="">
+                <div class="overlay" alt=""></div>
+
+            </div>
+        </div>
+        <!-- the first group of the landing content -->
+
+        <!-- the second group of the landing content -->
+        <div class="group two">
+            <div class="group-content">
+                <div class="two-left">
+                    <div class="group-title">
+                        So we thought, “Hey! Why not do a brand review that is reflective of our “unusual” nature?”
+                    </div>
+                    <img src="./images/review/CBR Image.png" alt="">
+                </div>
+                <div class="two-right">
+                    Traditional brand reviews are driven by the financial standings of brands. We wanted a different approach. And we thought, why not “impressions” and “perceptions.” 
+                    <br /> <br />
+                    Brands make impressions through their actions and inactions, and through them we form perceptions of these brands in our minds. Ultimately, these impressions and perceptions make us feel love, dislike, indifference, etc. for these brands.
+                    <br /> <br />
+                    The Creffiti Brand Review (CBR) 2021 is a delicious bite. The review is in three parts: Performance, Rebrands, and Rebranding Trends.
+                </div>
+                <div class="fancy-emoji">
+                    <img id="one-fe" src="./images/review/3.png" alt="">
+                    <img id="two-fe" src="./images/review/1.png" alt="">
+                    <img id="three-fe" src="./images/review/2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- the second group of the landing content -->
+
+        <!-- the third group of the landing content -->
+        <div class="group three">
+            <div class="group-three-title">
+                Impressions & Perceptions
+            </div>
+            <div class="group-three-emojis">
+                <img id="four-fe" src="./images/review/5.png" alt="">
+                <img id="five-fe"  src="./images/review/6.png" alt="">
+            </div>
+            <div class="group-three-content">
+                To truly keep to our impression-perception theme, we surveyed 114 people within the age range of 22-35 to find out their favorite and least favorite brands in Nigeria in 2021. It revealed quite very interesting insights. 
+                <br /><br />
+                We reviewed brands that impressed and struggled in 2021. There were many headline rebrands in 2021, we reviewed them and the top rebranding trends in the year. We highlighted brands to look out for in 2022, and rebranding trends you can expect. 
+                <br /><br />
+                With our full chest, we say, this is different; this is insightful; and this is a proper brand review – the way it should be done! Download the full review for free below.
+
+                <img id="six-fe" src="./images/review/7.png" alt="">
+                <img id="seven-fe" src="./images/review/8.png" alt="">
+            </div>
+        </div>
+        <!-- the third group of the landing content -->
+    </div>
+    <!-- the main content of the app -->
+
+    <!-- overlay for the popup section -->
+    <div class="popup__overlay">
+        <form class="popup_form">
+            <div class="popup_title">
+                Complete the form below to download
+                the Creffiti Brand Review (CBR) 2021
+            </div>
+
+            <div class="popup_content">
+                <div class="input_group">
+                    <label for=""> Full Name * </label>
+                    <input name="fullname" id="fullname" type="text">
+                    <span id="fullname__error" class="error_message --hidden">
+                        This field is compulsory. Please enter your full name
+                    </span>
+                </div>
+
+                <div class="input_group">
+                    <label for=""> Email * </label>
+                    <input name="email" id="email" type="email">
+                    <span id="email__error" class="error_message --hidden">
+                        This field is compulsory. Please enter a valid email address
+                    </span>
+                </div>
+
+                <div class="input_group">
+                    <label for="company"> Company</label>
+                    <input name="company" id="company" type="text">
+                </div>
+
+                <div class="input_group">
+                    <label for="position"> Position in Company</label>
+                    <input name="position" id="position" type="text">
+                </div>
+                
+            </div>
+
+            <div onclick="validateForm()" style="width: fit-content;" class="action_button dark">
+                <img src="./images/review/download.svg" alt="">
+                Download Review
+            </div>
+        </form>
+    </div>
+    <!-- overlay for the popup section -->
+
+    <!-- the footer of the app  -->
+    <div class="section -footer">
+        <div class="right_reserved">
+            <span class="right_reserved__item --first">© 2021 <span class="--bold">creffiti</span> - all rights reserved </span>
+            <span 
+                class="right_reserved__item --second"
+                style="cursor: pointer;text-decoration: underline;"
+            >
+                hello@creffiti.com
+            </span>
+            <span 
+                class="right_reserved__item"
+                style="cursor: pointer;text-decoration: underline;"
+            >
+                +2348027577659
+            </span>
+        </div>
+        <div class="social_media">
+            <div 
+                class="social_media__item --half-boxed" 
+                onclick="goTo('https:\/\/twitter.com/creffiti', true)"
+            >
+                twitter
+            </div>
+            <div 
+                class="social_media__item --half-boxed"
+                onclick="goTo('https:\/\/instagram.com/creffiti',true)"
+            >
+                instagram
+            </div>
+            <div 
+                class="social_media__item --half-boxed"
+                onclick="goTo('https:\/\/linkedin.com/company/creffiti-consulting',true)"
+            >
+                linkedin
+            </div>
+            <div 
+                class="social_media__item --last --half-boxed"
+                onclick="goTo('https:\/\/medium.com/@creffiti',true)"
+            >
+                medium
+            </div>
+        </div>
+    </div>
+    <!-- the footer of the app  -->
+    <div onclick="hidePreview(event)" class="reader-container --hidden">
+        <div class="reader">
+            <iframe
+            src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://res.cloudinary.com/xand6r/image/upload/v1645406195/Creffiti_Brand_Review_2021_ourxsd.pdf#toolbar=0&scrollbar=0"
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+            ></iframe>
+        </div>
+    </div>
 </body>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- script for the changing of tabs to input information -->
+<script>
+    //redirecting function
+    function goTo(link,newPage = ""){
+        //go to the link passed in
+        //it is an alternative to using anchor tags
+        //because they are difficult to style
+        if (!newPage){
+            window.location.assign(link)
+        }
+        else{
+            window.open(link,"_blank")
+        }
+    }
+</script>
+
+<!-- script for the AOS animation -->
+<script>
+  AOS.init(
+    {
+        duration: 1500, // values from 0 to 3000, with step 50ms
+        disable: function() {
+            var maxWidth = 1190;
+            return window.innerWidth < maxWidth;
+        }
+    }
+  );
+</script>
+<!-- script for the AOS animation -->
+
+<!-- script for validation -->
+<script>
+    const scrollDownToForm = () => {
+        $('html, body').animate({scrollTop: $("form").offset().top}, 2000);
+    }
+    const togglePreview = (e) => {
+        e = e || window.event;
+        e?.stopPropagation();
+        $(".reader-container").toggleClass("--hidden");
+    }
+    const hidePreview = (e) => {
+        e = e || window.event;
+        e.stopPropagation();
+        $(".reader-container").toggleClass("--hidden");
+    }
+    const download = (path, filename) => {
+        // Create a new link
+        const anchor = document.createElement('a');
+        anchor.href = 'https://res.cloudinary.com/xand6r/image/upload/v1645406195/Creffiti_Brand_Review_2021_ourxsd.pdf';
+        anchor.download = filename;
+        // Append to the DOM
+        document.body.appendChild(anchor);
+        // Trigger `click` event
+        anchor.click();
+        // Remove element from DOM
+        document.body.removeChild(anchor);
+    }; 
+
+    function validateForm(){
+        // remove every old error message
+        $(".error_message").addClass("--hidden");
+        // check if full name is present
+        const fullName = $("#fullname").val();
+        const email = $("#email").val();
+        const positionInCompany = $("#position").val();
+        const company = $("#company").val();
+        if(!fullName){
+            $("#fullname__error").removeClass("--hidden");
+            return;
+        }
+        if(!email || !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test("shuaibualexander@gmail.com")){
+            $("#email__error").removeClass("--hidden");
+            return;
+        }
+        // check if email is present and valid
+        // if all validation passes, then submit the form
+        submitForm();
+    }
+
+    function submitForm(){
+        let myForm = document.querySelector("form");
+        let formData = new FormData(myForm);
+        
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+        .then(() => {
+            download('./images/review/brv21.pdf', 'Creffiti Brand Review 2021.pdf');
+            $('html, body').animate({scrollTop: $("body").offset().top}, 2000);
+        })
+        .catch((error) => alert(error));
+    }
+</script>
+<!-- script for validation -->
+
+<!-- script for the scrollbar -->
+<script>
+    const scrollDirection = {
+        "up":true,
+        "down":false
+    }
+    let previousScroll = 0
+    document.addEventListener('scroll', ()=>{
+        if(window.innerWidth < 500) return;
+
+        if(window.scrollY  < previousScroll){
+            $(".image0").addClass("imageeasein")
+            $(".image0").removeClass("imageeaseout")
+
+            $(".rectanglepart").addClass("rectreduce")
+            $(".rectanglepart").removeClass("rectincrease")
+
+            $(".--nav__sub").addClass("textfadein")
+            $(".--nav__sub").removeClass("textfadeout")
+
+            $(".navigation").addClass("--whitebg")
+        }
+        else{
+            $(".image0").addClass("imageeaseout")
+            $(".image0").removeClass("imageeasein")
+
+            $(".rectanglepart").addClass("rectincrease")
+            $(".rectanglepart").removeClass("rectreduce")
+
+            $(".--nav__sub").removeClass("textfadein")
+            $(".--nav__sub").addClass("textfadeout")
+
+            $(".navigation").removeClass("--whitebg")
+
+        }
+        previousScroll =window.scrollY 
+
+    })
+</script>
+<!-- script for the scrollbar -->
+
 </html>
